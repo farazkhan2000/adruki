@@ -1,10 +1,18 @@
-import { Inter } from "next/font/google";
-import {NextUIProvider} from "@nextui-org/react";
+// import { Urbanist, Anton } from "next/font/google";
+import { NextUIProvider } from "@nextui-org/react";
 import "./globals.css";
 
 import MainNavbar from "@/components/Navbar";
 
-const inter = Inter({ subsets: ["latin"] });
+// const urbanist = Urbanist({ 
+//   subsets: ["latin"], 
+//   weight: ["400", "500", "600", "700"] // Add weights as needed
+// });
+
+// const anton = Anton({
+//   subsets: ["latin"],
+//   weight: "400",  // Anton only has a weight of 400
+// });
 
 export const metadata = {
   title: "Create Next App",
@@ -14,7 +22,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="">
-      <body className={inter.className}>
+      <body>
         <NextUIProvider>
           <MainNavbar />
           {children}

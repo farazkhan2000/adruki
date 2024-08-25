@@ -12,20 +12,23 @@ module.exports = {
     extend: {
       colors: {
         light: {
-          primary: '#1D4ED8',  // Blue-700
-          secondary: '#6B7280', // Gray-500
-          background: '#F9FAFB', // Gray-50
-          surface: '#FFFFFF',  // White
-          text: '#111827',  // Gray-900
+          primary: '#EF3733',  
+          secondary: '#EF3733', 
+          background: '#F5F5DC', 
+          text: '#FFFFFF',  
         },
         dark: {
-          primary: '#3B82F6',  // Blue-500
-          secondary: '#9CA3AF', // Gray-400
-          background: '#111827', // Gray-900
-          surface: '#1F2937',  // Gray-800
-          text: '#F9FAFB',  // Gray-50
+          primary: '#3B82F6', 
+          secondary: '#9CA3AF', 
+          background: '#111827', 
+          surface: '#1F2937',  
+          text: '#F9FAFB',  
         },
       },
+      // fontFamily: {
+      //   urbanist: ['Urbanist', 'sans-serif'],
+      //   anton: ['Anton', 'sans-serif'],
+      // },
     },
   },
   darkMode: "class", // Enables class-based dark mode switching
