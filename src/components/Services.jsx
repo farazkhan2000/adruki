@@ -4,22 +4,22 @@ import ServicesCards from './common/ServicesCard';
 
 const Services = () => {
   return (
-    <section className="min-h-[100vh] py-32 flex justify-center items-center" >
+    <section className="min-h-[100vh] bg-white py-32 flex justify-center items-center" >
       <div className="container" >
 
         <div className="flex items-center gap-3" >
           <Minus color="#FF0000" size={36} /> 
-          <span className="text-2xl font-bold" >
+          <span className="font-ClashGrotesk text-2xl font-semibold" >
             Our Services
           </span>
         </div>
         
-        <div className="flex items-end justify-between mt-4" >
-          <h2 className="text-6xl font-bold " >
-            Discover Our Digital Solutions
+        <div className="flex items-end justify-between gap-48 mt-4" >
+          <h2 className="font-ClashGrotesk text-6xl font-bold " >
+            Discover Our <span className="text-primary" >Digital Solutions</span>
           </h2>
-          <p className="border-l-4 border-[#FF0000] pl-4 mb-0 py-2 rounde-l-lg" >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eius explicabo animi, nihil dignissimos sequi quos a autem itaque amet?
+          <p className="border-l-4 border-primary pl-4 mb-0 py-1 text-black " >
+            At <span className="text-primary" >Adruki</span>, we specialize in delivering innovative, high-quality digital solutions tailored to your unique business needs, ensuring your brand thrives in the digital landscape.
           </p>
         </div>
 

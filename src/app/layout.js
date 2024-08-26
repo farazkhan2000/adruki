@@ -1,18 +1,13 @@
-// import { Urbanist, Anton } from "next/font/google";
+import { Poppins } from "next/font/google";
 import { NextUIProvider } from "@nextui-org/react";
 import "./globals.css";
 
 import MainNavbar from "@/components/Navbar";
 
-// const urbanist = Urbanist({ 
-//   subsets: ["latin"], 
-//   weight: ["400", "500", "600", "700"] // Add weights as needed
-// });
-
-// const anton = Anton({
-//   subsets: ["latin"],
-//   weight: "400",  // Anton only has a weight of 400
-// });
+const poppins = Poppins({ 
+  subsets: ["latin"], 
+  weight: ["400", "500", "600", "700"] 
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -21,8 +16,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="">
-      <body>
+    <html lang="en">
+      <body className={`${poppins.className}`}>
         <NextUIProvider>
           <MainNavbar />
           {children}

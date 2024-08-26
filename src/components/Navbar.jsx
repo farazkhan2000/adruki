@@ -46,17 +46,17 @@ export default function MainNavbar() {
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
-          <Link color="danger" href="#" className="text-light-text" >
+          <Link color="danger" href="#" className=" text-white" >
             About Us
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="danger" href="#" className="text-light-text" >
+          <Link color="danger" href="#" className=" text-white" >
             Services
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="danger" href="#" className="text-light-text" >
+          <Link color="danger" href="#" className=" text-white" >
             Our Work
           </Link>
         </NavbarItem>
@@ -64,7 +64,7 @@ export default function MainNavbar() {
 
       <NavbarContent justify="end">
         <NavbarItem>
-          <Button color="primary" variant="flat" className="rounded-full text-light-background px-6" >
+          <Button color="primary" variant="solid" className="font-semibold rounded-full text-white px-6" >
             Get in Touch 
             <ArrowUpRight size={21} />
           </Button> 
