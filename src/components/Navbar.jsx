@@ -31,7 +31,7 @@ export default function MainNavbar() {
   return (
     <Navbar
       onMenuOpenChange={setIsMenuOpen}
-      className="font-urbanist bg-transparent fixed top-0 w-full z-50 py-2" // Fixed at the top
+      className="font-urbanist bg-[#0F2028] fixed top-0 w-full z-50 py-2" // Fixed at the top
       maxWidth = "2xl"
     >
       <NavbarContent>
@@ -40,7 +40,7 @@ export default function MainNavbar() {
           className="sm:hidden"
         />
         <NavbarBrand>
-          <Image src={logo} alt="Codeto Logo" width={120} height={40} />
+          <Image src={logo} alt="Logo" width={120} height={40} />
         </NavbarBrand>
       </NavbarContent>
 
@@ -57,14 +57,24 @@ export default function MainNavbar() {
         </NavbarItem>
         <NavbarItem>
           <Link color="danger" href="#" className=" text-white" >
+            Process
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="danger" href="#" className=" text-white" >
             Our Work
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="danger" href="#" className=" text-white" >
+            Testimonials
           </Link>
         </NavbarItem>
       </NavbarContent>
 
       <NavbarContent justify="end">
-        <NavbarItem>
-          <Button color="primary" variant="solid" className="font-semibold rounded-full text-white px-6" >
+        <NavbarItem className="hidden md:block">
+          <Button color="primary" variant="solid" className="font-semibold rounded-full text-white px-6 " >
             Get in Touch 
             <ArrowUpRight size={21} />
           </Button> 

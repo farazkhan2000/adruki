@@ -56,9 +56,9 @@ const PrrocessCard = () => {
     <div className="flex flex-wrap ">
       {processes.map((process) => (
         <div key={process.id} className="w-full md:w-1/2 p-10">
-          <div className="flex justify-start items-end gap-10">
-            <h2 className="font-ClashGrotesk text-9xl text-primary">{process.processNum}</h2>
-            <h5 className="font-ClashGrotesk text-secondaryText font-bold border-b border-secondaryText text-4xl pb-6 mb-4 w-full">
+          <div className="flex justify-start items-end gap-4 lg:gap-10">
+            <h2 className="font-ClashGrotesk text-8xl lg:text-9xl text-primary ">{process.processNum}</h2>
+            <h5 className="font-ClashGrotesk text-secondaryText font-bold border-b border-secondaryText text-xl lg:text-4xl pb-6 mb-4 w-full">
               {process.title}
             </h5>
           </div>
